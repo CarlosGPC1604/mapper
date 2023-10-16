@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Incluye el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Incluye el archivo JavaScript de Bootstrap (jQuery y Popper.js deben incluirse antes) -->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets\img\logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Rutas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Ruta de Camión</h1>
+        <div class="input-group">
+            <input type="text" id="inputColonias" class="form-control" placeholder="Buscar por colonias">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Seleccionar Ruta
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" onclick="seleccionarRuta('Ruta 1')">Ruta 1</a>
+                    <a class="dropdown-item" href="#" onclick="seleccionarRuta('Ruta 2')">Ruta 2</a>
+                    <!-- Agrega más rutas aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container w-100 h-75">
+        <iframe class="w-100 h-100" src="https://www.google.com/maps/d/u/0/embed?mid=1NUkxPKzDFpf4VsuUR-qgEtVeQ0oORoI&ehbc=2E312F&noprof=1"></iframe>
+
+    </div>
+    
+</body>
+
+</html>
