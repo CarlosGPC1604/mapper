@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TepBus</title>
     <!-- Incluye el archivo CSS de Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
     <!-- Incluye el archivo JavaScript de Bootstrap (jQuery y Popper.js deben incluirse antes) -->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -39,7 +40,7 @@
     </nav>
 
     <div class="container">
-        <h1>Ruta de Camión</h1>
+        <h1 class="mt-lg-4">Ruta de Camión</h1>
         <div class="input-group">
             <input type="text" id="inputColonias" class="form-control" placeholder="Buscar por colonias">
             <div class="input-group-append">
@@ -55,10 +56,10 @@
         </div>
     </div>
     
-    <div class="container w-100 h-75" id="Ruta1">
+    <div class="container w-100 h-75 mt-4 mapaRuta" id="Ruta1">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NUkxPKzDFpf4VsuUR-qgEtVeQ0oORoI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
     </div>
-    <div class="container w-100 h-75" id="Ruta2">
+    <div class="container w-100 h-75 mt-4 mapaRuta" id="Ruta2">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Dxutz4p24SLjjAVDK45sVGR1IeJI4AU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
     </div>
 </body>
